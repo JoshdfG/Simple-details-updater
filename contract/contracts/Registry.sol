@@ -5,19 +5,19 @@ contract SimpleRegistry {
     string private entityName;
     uint private entityAge;
 
-    constructor(string memory name, uint age) {
-        entityName = name;
-        entityAge = age;
+    constructor(string memory _name, uint _age) {
+        entityName = _name;
+        entityAge = _age;
     }
 
     // Function to update the entity's name
-    function updateName(string memory newName) public {
-        entityName = newName;
+    function updateName(string memory _newName) public {
+        entityName = _newName;
     }
 
     // Function to update the entity's age
-    function updateAge(uint newAge) public {
-        entityAge = newAge;
+    function updateAge(uint _newAge) public {
+        entityAge = _newAge;
     }
 
     // Function to retrieve the entity's name and age
